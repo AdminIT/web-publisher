@@ -8,9 +8,9 @@ framework:
         default_memcached_provider: 'memcached://localhost'
         pools:
             doctrine.result_cache_pool:
-                adapter: 'cache.adapter.%env(resolve:DOCTRINE_CACHE_DRIVER)%'
+                adapter: cache.adapter.%env(resolve:DOCTRINE_CACHE_DRIVER)%
             doctrine.system_cache_pool:
-                adapter: 'cache.adapter.%env(resolve:DOCTRINE_CACHE_DRIVER)%'
+                adapter: cache.adapter.%env(resolve:DOCTRINE_CACHE_DRIVER)%
     esi: { enabled: true }
     translator:
         fallbacks: ["%locale%"]
